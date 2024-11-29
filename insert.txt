@@ -1,0 +1,1 @@
+INSERT INTO my_keyspace.temps_4_u(sensor_id, tempreature, created_at) VALUES (66, 49.64, '2024-11-18 11:23:16.974');
