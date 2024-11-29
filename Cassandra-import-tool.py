@@ -1,3 +1,4 @@
+#Used along with insert.txt as a mass migration tool to import data
 import logging
 import logging.handlers
 import time
@@ -12,7 +13,7 @@ file_path = "insert.txt"
 
 def read_file_as_list(file_path):
     with open(file_path, 'r') as file:
-        lines = file.read().splitlines()  # Reads all lines and removes the newline characters
+        lines = file.read().splitlines()
     return lines
 
 data_list = read_file_as_list(file_path)
