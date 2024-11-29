@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Connect to the Cassandra cluster
-cluster = Cluster(['10.77.0.226'], auth_provider=PlainTextAuthProvider('cassandra', 'cassandra'))
+cluster = Cluster(['x.x.x.x'], auth_provider=PlainTextAuthProvider('cassandra', 'cassandra'))
 session = cluster.connect('my_keyspace')  # Replace with your keyspace
 
 # Query the Cassandra table
@@ -20,7 +20,6 @@ for row in rows:
     print(row[2],rownum)
     temp = row[2]
     data.update({rownum: temp})
-    #data_list[rownum] = row # Convert each row to a dictionary if neededi
 
 rownumbers = list(data.keys())
 values = list(data.values())
