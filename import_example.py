@@ -1,3 +1,4 @@
+#basic cassandra import test
 from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 from cassandra.query import SimpleStatement
