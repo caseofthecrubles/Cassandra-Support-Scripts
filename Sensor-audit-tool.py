@@ -1,3 +1,5 @@
+#This connects to a cassandra database where tempature data is loaded then loads all the data and brings up a graph with matplotlib so the entire dataset can be evulated.
+
 from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 import matplotlib.pyplot as plt
